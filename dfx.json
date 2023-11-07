@@ -1,0 +1,29 @@
+{
+  "canisters": {
+    "E_Commerce_backend": {
+      "main": "src/E_Commerce_backend/main.mo",
+      "type": "motoko"
+    },
+    "E_Commerce_frontend": {
+      "dependencies": [
+        "E_Commerce_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/E_Commerce_frontend/src/index.html"
+      },
+      "source": [
+        "src/E_Commerce_frontend/assets",
+        "dist/E_Commerce_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
